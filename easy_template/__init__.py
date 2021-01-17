@@ -158,7 +158,7 @@ def process_template(template: str, values: dict = {}, lookup_dir: Path = Path(_
         file_name = match[REGEX_MATCH_GROUPS['file_name']]
         script_file = get_file_path(lookup_dir, file_name)
         if script_file is None:
-            break
+            continue
 
         with open(script_file, 'r', encoding="utf8") as f:
             processed_script = process_template(

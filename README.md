@@ -56,3 +56,8 @@ rm -rf build/ dist/ easy_template.egg-info/ && \
 python3 setup.py sdist bdist_wheel && \
 python3 -m twine upload dist/*
 ```
+
+## Changelog
+
+0.0.2 fix bug which stopped future template replacing when no script was found
+0.0.1 initial release
